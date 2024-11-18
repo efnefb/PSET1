@@ -7,15 +7,36 @@ appcompat = "1.7.0"
 material = "1.12.0"
 activity = "1.9.2"
 constraintlayout = "2.1.4"
+androidx-test-ext-junit = "1.1.5"
+androidx-test-core = "1.5.0"
+navigationFragment = "2.6.0"
+navigationUi = "2.6.0"
+
+
 
 [libraries]
-junit = { group = "junit", name = "junit", version.ref = "junit" }
-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+junit = { module = "junit:junit", version.ref = "junit" }
+androidx-test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "androidx-test-ext-junit" }
+test-core = { module = "androidx.test:core", version.ref = "androidx-test-core" }
+ext-junit = { module = "androidx.test.ext:junit", version.ref = "androidx-test-ext-junit" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+pdfbox = { group = "org.apache.pdfbox", name = "pdfbox", version = "2.0.29" }
+fontbox = { group = "org.apache.pdfbox", name = "fontbox", version = "2.0.29" }
+commons-logging = { group = "commons-logging", name = "commons-logging", version = "1.2" }
+
+djl-bom = "ai.djl:bom:0.21.0"
+log4j-slf4j-impl = "org.apache.logging.log4j:log4j-slf4j-impl:2.17.1"
+djl-api = { module = "ai.djl:api" }
+pytorch-engine = { module = "ai.djl.pytorch:pytorch-engine" }
+pytorch-model-zoo = { module = "ai.djl.pytorch:pytorch-model-zoo" }
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

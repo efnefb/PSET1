@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
+        android:name=".DataHolder"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,6 +16,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CountingPlugged"
         tools:targetApi="31">
+        <activity
+            android:name=".FindReplaceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindAndReplace"
+            android:exported="false"
+            android:theme="@style/Theme.CountingPlugged" />
+        <activity
+            android:name=".RandParaActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
